@@ -1,0 +1,25 @@
+.background1{
+    background-color: darkorchid;
+}
+
+.background2{
+    background-color: hotpink;
+}
+
+.background3{
+    background-color: mediumspringgreen;
+}
+
+.background4{
+    background-color: darkturquoise;
+}
+
+
+#cards{
+    gap: 3rem;
+}
+
+.box{
+    width: calc(100% / 7 - 3rem);
+    
+}
