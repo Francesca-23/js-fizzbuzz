@@ -17,25 +17,24 @@ for(let i = 1; i <= 100; i++){
     let container = document.querySelector('#cards');
     let item = document.createElement('div');
 
-    if(i % 3 == 0){
-
+    if(i % 5 == 0 && i % 3 == 0){
         item.className = "box background1 py-4 shadow rounded";
+        item.innerHTML = `FizzBuzz`;
+        container.append(item);
+
+    }else if(i % 3 == 0){   
+        item.className = "box background2 py-4 shadow rounded";
         item.innerHTML = `Fizz`;
         container.append(item);
 
-    }else if(i % 5 == 0){
-        
-        item.className = "box background2 py-4 shadow rounded";
+    }else if(i % 5 == 0){ 
+        item.className = "box background3 py-4 shadow rounded";
         item.innerHTML = `Buzz`;
         container.append(item);
-
-    }else if(i % 3 == 0 && i % 5 == 0){  //da aggiustare: non funziona
-        console.log('FizzBuzz');
    
-    }else{
-        
+    }else{   
         item.className = "box background4 py-4 shadow rounded";
-        item.innerHTML = `${i}`;
+        item.innerHTML = i;
         container.append(item);
     }
 
